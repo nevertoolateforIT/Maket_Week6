@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <style>
+    .container{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(200px, 2fr))
+        grid-template-rows: repeat(4, 200px)
+
+    }
+    .header{
+        grid-column:1/2;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;  
+      
+    }
+    .menu{
+        font-family:'Roboto', Helvetica, sans-serif;
+        font-size: 24px;
+    }
+    .menu .menu-1,.menu .menu-2,.menu .menu-3,.menu .menu-4, .menu .logo:hover{
+       text-decoration:none;
+       color:black;
+       display:inline-block
+
+    }
+    .main{
+        grid-column:1/2;
+        column-gap:1rem;
+    }
+
+    .aside{
+        grid-column:2/3;
+        background-color: #ffc42a;
+        height:912px;
+        width:912px;
+    }
+    .footer{
+        grid-column:1/2;
+    }
+    .picture{
+        width: 779px;
+        height: 912px; 
+    }
+    .logo{
+        height:43px;
+        width:42px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="menu">
+            <img id="logo" src="assets/pictures/logo1.png" alt="logo"></img> 
+            <a class="menu-1" href="Home.html">Home</a>
+            <a class="menu-2" href="Our Services.html">Our Services</a>
+            <a class="menu-3" href="About.html">About</a>
+            <a class="menu-4" href="Contact.html">Contact</a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="content-1"></div>
+                <button class="button1">Parcel</button>
+                <button class="button2" >Food</button>
+            <div class="content-2">Fast Responses <br> Fast Delivery</div>
+            <div class="content-3"> text</div>
+            <div class="content-1"></div>
+                <button>Book a Delivery</button>
+    </main>
+        <aside class="sidebar">
+             <img id="picture" src="assets/pictures/Delivery_on_moped.png" alt="parcel delivery">
+        </aside>
+        <footer class="footer">
+            <div class="footer-1">footer-1</div>
+            <div class="footer-2">footer-2</div>
+        </footer>
+      </div>
+</body>
+</body>
+</html>
